@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <h1>Calendar</h1><br>
+        <div class="navigation">
+            <div class="nav-btn" onclick="previousMonth()"><i class="fas fa-chevron-left"></i></div>
+            <span id="currentMonthYear"></span>
+            <div class="nav-btn" onclick="nextMonth()"><i class="fas fa-chevron-right"></i></div>
+            
+        </div>
+    
+        <div class="weekdays">
+            <div class="weekday">Mon</div>
+            <div class="weekday">Tue</div>
+            <div class="weekday">Wed</div>
+            <div class="weekday">Thu</div>
+            <div class="weekday">Fri</div>
+            <div class="weekday">Sat</div>
+            <div class="weekday">Sun</div>
+        </div>
+
+        <div id="calendar" class="days-container"></div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
